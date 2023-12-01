@@ -63,6 +63,31 @@ class TestTopModule(exeFilename: String) extends Module {
   io.mem_debug_read_data    := mem.io.debug_read_data
 }
 
+class shellsort extends AnyFlatSpec with ChiselScalatestTester {
+  behavior.of("Single Cycle CPU")
+  it should "recursively calculate Fibonacci(10)" in {
+    test(new TestTopModule("shellsort.asmbin")).withAnnotations(TestAnnotations.annos) { c =>
+      for (i <- 1 to 2000000) {
+        c.clock.step()
+        c.io.mem_debug_read_address.poke((i * 4).U) // Avoid timeout
+      }
+      c.io.regs_debug_read_address.poke(8.U) // s0
+      c.io.regs_debug_read_data.expect(0xbfc00000L.U)
+      c.io.regs_debug_read_address.poke(9.U) // s1
+      c.io.regs_debug_read_data.expect(0xbfa60000L.U)
+      c.io.regs_debug_read_address.poke(18.U) // s2
+      c.io.regs_debug_read_data.expect(0xbf8c0000L.U)
+      c.io.regs_debug_read_address.poke(19.U) // s3
+      c.io.regs_debug_read_data.expect(0x3f990000L.U)
+      c.io.regs_debug_read_address.poke(20.U) // s4
+      c.io.regs_debug_read_data.expect(0x3fb30000L.U)
+      c.io.regs_debug_read_address.poke(21.U) // s5
+      c.io.regs_debug_read_data.expect(0x3fcc0000L.U)  
+    }
+  }
+}
+
+
 class FibonacciTest extends AnyFlatSpec with ChiselScalatestTester {
   behavior.of("Single Cycle CPU")
   it should "recursively calculate Fibonacci(10)" in {
@@ -83,7 +108,7 @@ class QuicksortTest extends AnyFlatSpec with ChiselScalatestTester {
   behavior.of("Single Cycle CPU")
   it should "perform a quicksort on 10 numbers" in {
     test(new TestTopModule("quicksort.asmbin")).withAnnotations(TestAnnotations.annos) { c =>
-      for (i <- 1 to 50) {
+      for (i <- 1 to 1000) {
         c.clock.step(1000)
         c.io.mem_debug_read_address.poke((i * 4).U) // Avoid timeout
       }
