@@ -1,0 +1,151 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.9.7 (Eclipse Adoptium Java 11.0.21)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 323.626203ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 158.997343ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.260337ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/darren/ca2023-lab3/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 8.395961ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/darren/ca2023-lab3/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 14.380564 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project ca2023-lab3-build from plugins.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(ca2023-lab3-build) took 58.414304ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id ca2023-lab3-build, base: /home/darren/ca2023-lab3/project, plugins: List(<none>))) took 104.842792ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/darren/ca2023-lab3/project, returning: (ca2023-lab3-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 445.519624ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 35.429201ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/home/darren/ca2023-lab3/project/, ...) took 647.32791ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 1118.725473ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 5.092283ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 88.271594ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 6.71283ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 798.026505ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 123.166101ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 1.336778ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/darren/ca2023-lab3/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 4093.017906ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.003453ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/darren/ca2023-lab3[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 0.158067ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.657986 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 2.725226ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /home/darren/ca2023-lab3, plugins: List(<none>))) took 5.266615ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/darren/ca2023-lab3, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 111.414275ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 0.891562ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/home/darren/ca2023-lab3/, ...) took 4206.539354ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 4253.740743ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.098046ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 13.545909ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 0.339051ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 133.63648ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 35.998793ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.002748ms[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to mycpu (in build file:/home/darren/ca2023-lab3/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/darren/ca2023-lab3/target/scala-2.13/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mExecuteTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mExecution of Single Cycle CPU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should execute correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInstructionFetchTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInstructionFetch of Single Cycle CPU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should fetch instruction[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRegisterFileTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRegister File of Single Cycle CPU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should read the written content[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should x0 always be zero[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should read the writing content[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFibonacciTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSingle Cycle CPU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should recursively calculate Fibonacci(10) *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  os.SubprocessException: CommandResult 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mmake: Entering directory '/home/darren/ca2023-lab3/test_run_dir/Single_Cycle_CPU_should_recursively_calculate_Fibonacci10/verilated'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mg++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -O1 -DVL_USER_STOP -DVL_USER_FATAL -DVL_USER_FINISH -DTOP_TYPE=VTestTopModule -include VTestTopModule.h -fPIC -shared -I'/home/darren/.sdkman/candidates/java/11.0.21-tem/include' -I'/home/darren/.sdkman/candidates/java/11.0.21-tem/include/linux' -fvisibility=hidden  -Os -c -o TestTopModule-harness.o ../TestTopModule-harness.cpp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mg++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -O1 -DVL_USER_STOP -DVL_USER_FATAL -DVL_USER_FINISH -DTOP_TYPE=VTestTopModule -include VTestTopModule.h -fPIC -shared -I'/home/darren/.sdkman/candidates/java/11.0.21-tem/include' -I'/home/darren/.sdkman/candidates/java/11.0.21-tem/include/linux' -fvisibility=hidden  -Os -c -o verilated.o /usr/share/verilator/include/verilated.cpp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mg++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -O1 -DVL_USER_STOP -DVL_USER_FATAL -DVL_USER_FINISH -DTOP_TYPE=VTestTopModule -include VTestTopModule.h -fPIC -shared -I'/home/darren/.sdkman/candidates/java/11.0.21-tem/include' -I'/home/darren/.sdkman/candidates/java/11.0.21-tem/include/linux' -fvisibility=hidden  -Os -c -o verilated_cov.o /usr/share/verilator/include/verilated_cov.cpp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VTestTopModule.cpp VTestTopModule__Slow.cpp VTestTopModule__Syms.cpp > VTestTopModule__ALL.cpp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mg++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -O1 -DVL_USER_STOP -DVL_USER_FATAL -DVL_USER_FINISH -DTOP_TYPE=VTestTopModule -include VTestTopModule.h -fPIC -shared -I'/home/darren/.sdkman/candidates/java/11.0.21-tem/include' -I'/home/darren/.sdkman/candidates/java/11.0.21-tem/include/linux' -fvisibility=hidden  -Os -c -o VTestTopModule__ALL.o VTestTopModule__ALL.cpp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mmake: Leaving directory '/home/darren/ca2023-lab3/test_run_dir/Single_Cycle_CPU_should_recursively_calculate_Fibonacci10/verilated'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at os.proc.call(ProcessOps.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.simulator.VerilatorSimulator$.run(VerilatorSimulator.scala:225)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.simulator.VerilatorSimulator$.compileSimulation(VerilatorSimulator.scala:174)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.simulator.VerilatorSimulator$.createContextFromScratch(VerilatorSimulator.scala:144)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.simulator.VerilatorSimulator$.$anonfun$createContext$1(VerilatorSimulator.scala:87)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.simulator.Caching$.cacheSimulationBin(Caching.scala:27)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.simulator.VerilatorSimulator$.createContext(VerilatorSimulator.scala:87)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.internal.BackendExecutive$.start(BackendExecutive.scala:37)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.defaults.package$.createDefaultTester(defaults.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.ChiselScalatestTester$TestBuilder.apply(ChiselScalatestTester.scala:31)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInstructionDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInstructionDecoder of Single Cycle CPU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce correct control signal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mByteAccessTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSingle Cycle CPU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should store and load a single byte[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mQuicksortTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSingle Cycle CPU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should perform a quicksort on 10 numbers[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 5.127 (53.2%) were spent in GC. [Heap: 0.01GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 8.863 (95.5%) were spent in GC. [Heap: 0.00GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 9.728 (99.4%) were spent in GC. [Heap: 0.00GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 11.956 (123.9%) were spent in GC. [Heap: 0.95GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mshellsort:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSingle Cycle CPU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mriscv.singlecycle.shellsort *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.OutOfMemoryError: Java heap space[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.lang.Class.newInstance(Class.java:554)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:404)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:394)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.security.AccessController.doPrivileged(Native Method)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:393)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateMethod(MethodAccessorGenerator.java:75)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.lang.reflect.Method.invoke(Method.java:566)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at riscv.singlecycle.shellsort.$anonfun$new$28(CPUTest.scala:72)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
